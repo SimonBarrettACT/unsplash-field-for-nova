@@ -82,7 +82,7 @@
                 axios.get(`https://api.unsplash.com/photos/random/?client_id=${this.field.unsplashKey}&query=${this.query}&orientation=${this.field.orientation}&featured=${this.field.featured}`)
                     .then(response => {
                         this.image = response.data
-                        this.imageUrl = this.image.urls[this.field.size]
+                        this.imageUrl = this.image.urls[this.field.previewSize]
                         this.imageAlt = this.image['description']
                         this.value = this.image['id']
 
