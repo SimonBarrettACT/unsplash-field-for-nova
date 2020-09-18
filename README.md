@@ -20,7 +20,7 @@ UNSPLASH_ACCESS_KEY=<your access key>
 
 ### Usage
 
-Before using the field it will be necessary to add a column to your table.
+**Before using the field it will be necessary to add a column to your table.**
 
 ```php
 /** * Run the migrations. 
@@ -35,17 +35,26 @@ Before using the field it will be necessary to add a column to your table.
  }
 ```
 
-To add your field to a resource:
+**To add your field to a resource:**
 
-            Unsplash::make('Photo', 'unsplash_id')
-                ->queryPlaceholder('Provide a topic to search for') //Optional
-                ->orientation('landscape')  //Optional - landscape, portrait or squarish
-                ->previewSize('regular')   //Optional - thumb, small, regular, full
-                ->featured(true)             //Optional - set to true to only display 'featured' images
-                ->rules('max:20')
-                ->help(
-                'Enter the Unsplash code for your photo.'
-            ),
-            
+```php
+use SimonBarrettACT\Unsplash\Unsplash;
+...
+public function fields(Request $request) {
+    return [
+        ...
+            Unsplash::make('Photo', 'unsplash_id'),
+        ...
+    ];
+}          
+```
 
 ### Options
+
+```php
+Unsplash::make('Photo', 'unsplash_id')
+   ->queryPlaceholder('Provide a topic to search for') //Optional
+   ->orientation('landscape') //Optional - landscape, portrait or squarish
+   ->previewSize('regular')   //Optional - thumb, small, regular, full
+   ->featured(true),           //Optional - set to true to only display 'featured' images
+```
