@@ -56,5 +56,5 @@ Unsplash::make('Photo', 'unsplash_id')
    ->queryPlaceholder('Provide a topic to search for') //Optional
    ->orientation('landscape') //Optional - landscape, portrait or squarish
    ->previewSize('regular')   //Optional - thumb, small, regular, full
-   ->featured(true),           //Optional - set to true to only display 'featured' images
+   ->featured(true),          //Optional - set to true to only display 'featured' images
 ```
