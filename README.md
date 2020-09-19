@@ -2,6 +2,8 @@
 
 This custom field has the ability to fetch and display an image from Unsplash in Laravel Nova.
 
+![](https://user-images.githubusercontent.com/57679318/93665713-a9300880-fa70-11ea-9b1e-1e784d111bf6.png)
+
 ### Installation
 
 ```shell
@@ -58,3 +60,13 @@ Unsplash::make('Photo', 'unsplash_id')
    ->previewSize('regular')   //Optional - thumb, small, regular, full
    ->featured(true),          //Optional - set to true to only display 'featured' images
 ```
+
+### Searching for images
+
+To search for an image using the field, enter a topic to search for and click the 'Search' button. A random image will be displayed. Repeated presses of the button will generate other random images. This feature is fairly basic at the moment but will be improved in future releases.
+
+If you know the Unsplash photo's id enter it in the second input box.
+
+### Displaying images in your app
+
+For the easiest way of displaying Unsplash images please check out [Blade UI Kit](https://blade-ui-kit.com/docs/0.x/unsplash).
