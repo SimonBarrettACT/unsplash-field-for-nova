@@ -63,7 +63,9 @@ Unsplash::make('Photo', 'unsplash_id')
 
 ### Searching for images
 
-To search for an image using the field, enter a topic to search for and click the 'Search' button. A random image will be displayed. Repeated presses of the button will generate other random images. This feature is fairly basic at the moment but will be improved in future releases.
+To search for an image using the field, enter a topic to search for and click the 'Search' button. A random image will be displayed. Repeated presses of the button will generate other random images. Leaving the search box empty will return a random image on any topic.
+
+This feature is fairly basic at the moment but will be improved in future releases.
 
 If you know the Unsplash photo's id enter it in the second input box.
 
