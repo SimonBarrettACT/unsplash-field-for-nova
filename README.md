@@ -20,6 +20,19 @@ Once you have done that, add the following line, containing your key, to your `.
 UNSPLASH_ACCESS_KEY=<your access key>
 ```
 
+Then add your access key to the `config/services.php` file:
+
+```php
+return [
+    // ...
+
+    'unsplash' => [
+        'access_key' => env('UNSPLASH_ACCESS_KEY')
+    ],
+
+];
+```
+
 ### Usage
 
 **Before using the field it will be necessary to add a column to your table.**

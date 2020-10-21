@@ -51,7 +51,7 @@ class Unsplash extends Field
         parent::__construct($name, $attribute, $resolveCallback);
 
         $this->withMeta([
-            'unsplashKey' => env('UNSPLASH_ACCESS_KEY', ''),
+            'unsplashKey' => config('services.unsplash.access_key'),
             'queryPlaceholder' => $this->queryPlaceholder,
             'orientation' => $this->orientation,
             'featured' => $this->featured,
