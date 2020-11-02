@@ -12,7 +12,7 @@ composer require simonbarrettact/unsplash
 
 The Unsplash field requires you to set up an Unsplash access key.
 
-Get your Unsplash access key from [the develop dashboard](https://unsplash.com/developers) after creating an app with them.
+Get your Unsplash access key from [the developer dashboard](https://unsplash.com/developers) after creating an app with them.
 
 Once you have done that, add the following line, containing your key, to your `.env` file.
 
